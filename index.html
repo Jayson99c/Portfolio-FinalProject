@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITE1 Final Project</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">Portfolio</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button id="themeToggleBtn" onclick="toggleTheme()">🌙 Dark Mode</button>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="container">
+
+        <!-- Date & Time Bar -->
+        <div class="datetime-bar">
+            <span>Current Date & Time: <strong id="dateTimeStr">Loading...</strong></span>
+        </div>
+
+        <!-- Home Section -->
+        <section id="home" class="card hero">
+            <div class="hero-content">
+                <h1>Hello, I'm <span class="highlight">Jayson Jarobel</span> Welcome to my Webpage!</h1>
+                <p class="subtitle">Aspiring Network Engineer</p>
+                
+            </div>
+            
+            <!-- Profile Image Slideshow -->
+            <img src="Images/jayson.jpg" alt="">
+        </section>
+
+        <!-- About Me -->
+        <section id="about" class="card">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <div>
+                    <h3>Personal Information</h3>
+                    <p><strong>Course:</strong> BS Information Technology</p>
+                    <p><strong>Year Level:</strong> 2nd Year</p>
+                    <p><strong>Interests:</strong>Computer Networking, Web Design, Troubleshooting, Gaming</p>
+                    
+                    <button class="btn outline-btn" onclick="toggleBio()" id="readMoreBtn">Read More</button>
+                    <div id="moreBio" class="hidden-content">
+                        <p>As an aspiring network engineer, I am eager to learn hands-on networking skills.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Education</h3>
+                    <button class="btn outline-btn" onclick="toggleEducation()">Show/Hide Education Details</button>
+                    <div id="educationInfo" class="edu-details">
+                        <p><strong>College:</strong> Bestlink College of the Philippines</p>
+                        <p><strong>Senior High School:</strong> General Academic Strand (2016-2018)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="card">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <ul class="skill-list">
+                        <li>HTML</li>
+                        <li>Basic Computer Networking</li>
+                        <li>Network Troubleshooting</li>
+                
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Personal Skills</h3>
+                    <ul class="skill-list">
+                        <li>Problem Solving</li>
+                        <li>Multi-Tasking</li>
+                        <li>Drawing</li>
+                        <li>Communication</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects  -->
+        <section id="projects" class="card">
+            <h2>Projects</h2>
+
+               
+                  <div class="project-card">  
+                    <h3>Student Profile Cards</h3>
+                    <a href="https://jayson99c.github.io/StudentProfileCards/">
+                    <button class="btn card-btn">View Activity</button>
+                    </a>
+                </div>
+
+               
+                <div class="project-card">  
+                    <h3>Multi-Media Page</h3>
+                    <a href="https://jayson99c.github.io/mediapage/">
+                    <button class="btn card-btn">View Activity</button>
+                    </a>
+                </div>
+
+               
+                <div class="project-card">
+                    <h3>Teachers Day Greetings</h3>
+                    <a href="https://jayson99c.github.io/teachers-day-greetings/">
+                    <button class="btn card-btn">View Activity</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="card">
+            <h2>Contact Information</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p><strong>Phone Number:</strong> 09690969720</p>
+                    <p><strong>Email Address:</strong> jaysonjarobel99@gmail.com</p>
+                    <p><strong>Address:</strong> Quezon City, Philippines</p>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Jayson Jarobel(BSIT). All Rights Reserved.</p>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
